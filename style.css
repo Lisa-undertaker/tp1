@@ -1,0 +1,98 @@
+/* Plein écran */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: rgb(40, 40, 40);
+}
+
+/* Container principal qui prend tout l'espace */
+.quiz-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* En-tête centré */
+.quiz-container h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Deux colonnes */
+.quiz-grid {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Colonne gauche = boutons */
+.right-column {
+  display: flex;
+}
+
+/* Boutons verticalement */
+.answers {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Question et feedback à droite */
+.right-column {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.answer-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #ddd;
+  transition: background-color 0.3s;
+}
+
+.answer-button:hover {
+  background-color: blanchedalmond;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.fireworks {
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    background: url(&#39;https://imgservices-1252317822.image.myqcloud.com/image/081320210201435/e9951400.png&#39;) right top no-repeat;
+
+    background-size: auto 150px;
+
+    animation: fireworks 1s steps(24) infinite;
+
+}
+
+@keyframes fireworks {
+
+    to {
+
+        background-position: 100%;
+
+    }
+
+}

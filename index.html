@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link  rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Interactif</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Quiz Interactif</h1>
+
+      <section class="quiz-grid">
+        <div class="left-column">
+          <p id="question-text">Question ici</p>
+          <p id="feedback-text"></p>
+          <button id="next-button" style="display: none">
+            Question suivante
+          </button>
+          <button id='fullReset' style="display: none" >Recommencer</button>
+        </div>
+
+        <div class="right-column">
+          <div class="answers">
+            <button class="answer-button" data-index="0">Réponse 1</button>
+            <button class="answer-button" data-index="1">Réponse 2</button>
+            <button class="answer-button" data-index="2">Réponse 3</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
